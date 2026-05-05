@@ -9,7 +9,7 @@ Desarrollado con una arquitectura de agente modular que utiliza LLM, tools de bu
 ## 🚀 Demo
 
 👉 **Probá la app en vivo:**  
-🔗 [Mar2- BOTtana](https://tu-app.streamlit.app)
+🔗 [Mar2- BOTtana](https://mar2-bottana.streamlit.app/)
 
 Casos de uso:
 
