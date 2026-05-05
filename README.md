@@ -24,9 +24,9 @@ Casos de uso:
 * 🖼️ Multimodal input (texto + imagen)
 * 🍲 Generación de recetas según ingredientes o contexto
 * 🔧 Web-augmented responses mediante Tools de búsqueda externas (recetas y precios)
-🔗 Orquestación de agentes basada en grafos
-💬 Interfaz de chat interactiva con Streamlit
-🔐 Configuración basada en el entorno
+* 🔗 Orquestación de agentes basada en grafos
+* 💬 Interfaz de chat interactiva con Streamlit
+* 🔐 Configuración basada en el entorno
 
 ---
 
@@ -93,7 +93,7 @@ streamlit run app/app_images.py
 
 ---
 
-## 📌 Example Usage
+## 📌 Ejemplo de Uso
 
 **Input:**
 
@@ -104,24 +104,30 @@ streamlit run app/app_images.py
 >"Tienes los siguientes ingredientes:
 >
 >Puré de tomate
+>
 >Pechuga de pollo
->Con estos ingredientes puedes preparar un delicioso Pollo en salsa >de puré de tomate.
+>
+>Con estos ingredientes puedes preparar un delicioso Pollo en salsa de puré de tomate.
 >
 >Puedes ver recetas recomendadas en:
 >
 >https://www.recetasnestle.com.mx/recetas/pollo-en-salsa-pure-tomate
 >https://cookpad.com/eeuu/buscar/pure%20de%20tomate%20y%20pollo
 >https://www.lacostena.com.mx/es/recetas/pechuga-de-pollo-con-sals/
->Si puedes, puedes sumar estos ingredientes que complementan la >receta:
+>
+>Si puedes, puedes sumar estos ingredientes que complementan la receta:
 >
 >Cebolla
+>
 >Ajo
+>
 >Zanahoria
+>
 >Papa."
 
 ---
 
-## 🧠 Decuisiones de diseño
+## 🧠 Decisiones de diseño
 
 * Separación de responsabilidades entre la interfaz de usuario, la lógica del agente y las herramientas
 * Arquitectura modular para facilitar la extensibilidad
