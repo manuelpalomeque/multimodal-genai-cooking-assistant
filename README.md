@@ -9,10 +9,8 @@ Desarrollado con una arquitectura de agente modular que utiliza LLM, tools de bu
 ## 🚀 Demo
 El siguiente es un video corto que muestra el funcionamiento del agente:
 
-[Caso de Uso 1](https://github.com/manuelpalomeque/multimodal-genai-cooking-assistant/blob/main/data/Caso_de_uso_1_Input_texto.gif?raw=true)
-
-
-[Caso de Uso 2](https://github.com/manuelpalomeque/multimodal-genai-cooking-assistant/blob/main/data/Caso_de_uso_2_Input_imagen.gif?raw=true)
+![Demo1](data/Caso_de_uso_1_Input_texto.gif)
+![Demo2](data/Caso_de_uso_2_Input_imagen.gif)
 
 Casos de uso:
 
