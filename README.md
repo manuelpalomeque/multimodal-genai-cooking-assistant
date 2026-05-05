@@ -7,15 +7,17 @@ Desarrollado con una arquitectura de agente modular que utiliza LLM, tools de bu
 ---
 
 ## 🚀 Demo
-El siguiente es un video corto que muestra el funcionamiento del agente:
-
-![Demo1](data/Caso_de_uso_1_Input_texto.gif)
-![Demo2](data/Caso_de_uso_2_Input_imagen.gif)
 
 Casos de uso:
 
 1.  El usuario introduce los ingredientes que tiene, para solicitar recetas al agente. Este le informa que receta puede hacer con los ingredientes, le devuelve un listado de enlaces a recetas y le sugiere ingredientes faltantes, que podrian complementar la receta.
+
+![Demo1](data/Caso_de_uso_1_Input_texto.gif)
+
 2. El usuario introduce una imagen de los ingredientes disponibles en su heladera, para que el agente le sugiera recertas en base a sus ingredientes disponibles.
+
+![Demo2](data/Caso_de_uso_2_Input_imagen.gif)
+
 3. El asistente le ofrece consultar los precios d elos ingredientes faltantes en un supermercado, de manera online. Informa los precios de cada ingrediente
 
 ---
