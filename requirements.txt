@@ -1,0 +1,10 @@
+dotenv
+streamlit
+langgraph
+tavily
+requests
+langchain_google_genai
+langchain
+markdownify
+typing
+ipywidgets
