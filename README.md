@@ -8,6 +8,9 @@ Desarrollado con una arquitectura de agente modular que utiliza LLM, tools de bu
 
 ## 🚀 Demo
 
+👉 **Probá la app en vivo:**  
+🔗 [Mar2- BOTtana](https://tu-app.streamlit.app)
+
 Casos de uso:
 
 1.  El usuario introduce los ingredientes que tiene, para solicitar recetas al agente. Este le informa que receta puede hacer con los ingredientes, le devuelve un listado de enlaces a recetas y le sugiere ingredientes faltantes, que podrian complementar la receta.
