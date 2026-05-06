@@ -19,31 +19,54 @@ st.set_page_config(
 # 2. CSS personalizado
 st.markdown("""
     <style>
+    @import url('[https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap)');
+            
     .main-title {
-        font-family: 'Georgia', serif;
-        color: #7d4f39;
-        text-align: center;
+        font-family: 'Caveat', cursive !important;
+        color: #f57e45 !important;
+        text-align: left;
         padding: 1rem;
         border-bottom: 2px solid #e1d4c1;
         margin-bottom: 2rem;
     }
 
-    .stChatMessage {
-        background-color: #ebdbc7 !important;
-        border: 2px solid #eee;
-        border-radius: 15px !important;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    /* 1. Estilo base para AMBAS burbujas */
+    [data-testid="stChatMessage"] {
+        border-radius: 20px !important;
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 2px solid #FFD56B !important;
+        background-color: #f5fcd4;
+    
+    }
+
+    /* Personalización del Sidebar */
+    [data-testid="stSidebar"] {
+        background-image: url("https://raw.githubusercontent.com/manuelpalomeque/multimodal-genai-cooking-assistant/refs/heads/main/data/FondoLineasColores.jpg")!important; 
+
+    }
+
+    
+    /* Estilo para los botones (opcional) */
+    .stButton >button {
+        border-radius: 20px;
+        border: 1px solid #FF6B35;
+        color: #FF6B35;
     }
     </style>
-
-    <h1 class="main-title">👩🏻‍🍳 Mar2 BOTtana: Tu Chef Virtual</h1>
+            
+    <h1 class="main-title">Hola, soy Mar2 BOTtana</h1>
+    <h5>Decime qué ingredientes tenés y te genero recetas increíbles </h5>
 """, unsafe_allow_html=True)
 
 # 3. Sidebar
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/3448/3448099.png", width=100)
-    st.header("Configuraciones")
-    st.info("Contame qué tenés y te armo una receta 👀")
+    st.image("https://raw.githubusercontent.com/manuelpalomeque/multimodal-genai-cooking-assistant/refs/heads/main/data/Mar2.png", width=600)
+    st.header("Tu Chef Virtual con IA")
+    st.markdown("Estoy lista para cocinar! Sube una imagen de tus ingredientes o dime qué tienes, y crearé algo delicioso para ti.")
+    st.markdown("---")
+   
+    st.markdown("#### Acciones:")
 
     if st.button("🧹 Limpiar conversación"):
         st.session_state.messages = []
@@ -66,12 +89,12 @@ for msg in st.session_state.messages:
 
 # 6. Uploader (fuera del input de chat)
 uploaded_file = st.file_uploader(
-    "📸 Subí una imagen (opcional)",
+    "📸 Subí una foto de tus ingredientes! 👇🏻",
     type=["jpg", "jpeg", "png"]
 )
 
 # 7. Input del usuario
-if query := st.chat_input("Hola! indicame que ingredientes tienes!"):
+if query := st.chat_input("Indicame que ingredientes tienes! Ej: Pollo, arroz ..."):
 
     # Obtener bytes de imagen (forma correcta)
     img_bytes = uploaded_file.getvalue() if uploaded_file else None
